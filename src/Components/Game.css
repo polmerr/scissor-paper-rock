@@ -1,0 +1,132 @@
+.title{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+    padding:10px;
+    font-family: 'Bella';
+    letter-spacing: 9px;
+    
+    color:#3367CE  ;
+}
+
+.game-box{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    font-family: 'Bella';
+    background-color:#162D59;
+    width:60%;
+    margin:0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 3px 7px 7px rgba(0,0,0,0.4);
+    color:#E04E2D;
+    position: relative;
+    
+}
+
+.columns{
+    display: flex;
+    margin-bottom: 30px;
+}
+.retry{
+    font-size: 25px;
+    position: absolute;
+    
+}
+.retry:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.game-column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.game-column p{
+    margin-bottom: 20px;
+}
+.sub-title{
+    font-size: 28px;
+    font-family: 'Bella';
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.choices{
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.choice{
+    display: flex;
+    gap:20px
+}
+.icon{
+    font-size: 28px;
+    position: absolute;
+    right: -50px;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color:white
+}
+
+.loader{
+    display: flex;
+    gap:10px;
+    font-size: 30px;
+}
+
+.a1{
+    animation: bounce 1s .1s forwards ease-in-out infinite ;
+}
+.a2{
+    animation: bounce 1s .2s forwards ease-in-out infinite ;
+}
+.a3{
+    animation: bounce 1s .3s forwards ease-in-out infinite ;
+}
+
+.choice-icon{
+    font-size: 50px;
+    padding:15px
+}
+
+.winner-is{
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+
+}
+
+@media (max-width:800px){
+
+    .title, .sub-title{
+        font-size: 20px;
+    }
+
+  .game-box{
+    width:90%;
+  }
+}
+
+@media (max-width:400px){
+
+    .title, .sub-title{
+        font-size: 1px;
+    }
+
+  
+}

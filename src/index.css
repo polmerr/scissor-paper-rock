@@ -1,0 +1,22 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Whoah";
+  src: url('../src/assets/WhoaSaucePersonalUseBold-mLmV5.ttf');
+}
+
+@font-face {
+  font-family: 'Bella' ;
+  src: url('../src/assets/Bella-yw64Z.ttf');
+}
+
+#root{
+  background-color: #1F1F26;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
